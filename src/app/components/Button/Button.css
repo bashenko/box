@@ -1,0 +1,40 @@
+@media (max-width: 576px) {
+    .button {
+      @apply px-5 py-3;
+    }
+  }
+  
+  /* Button.css */
+  .button {
+    @apply inline-block cursor-pointer no-underline transition-[background-color] duration-[0.3s,color] delay-[0.3s] justify-center w-auto items-center px-10 py-3 rounded-[20px] border-[none];
+  }
+  .prime {
+    @apply bg-[#E00027] text-[white] shadow-[0px_9px_17px_0px_rgba(216,42,42,0.20)] hover:bg-[#800217] hover:shadow-[0px_3px_17px_0px_rgba(216,42,42,0.5)];
+  }
+  .secondary {
+    @apply bg-[#242627] text-[white] border border-solid border-[#707070] hover:bg-[#171819];
+  }
+  .small {
+    @apply text-sm;
+  }
+  .main {
+    @apply text-xl not-italic font-medium leading-[normal];
+  }
+  .with-icon {
+    @apply flex items-center;
+  }
+  .icon {
+    @apply mr-2;
+  }
+  @media (max-width: 992px) {
+    .small.with-icon .text {
+      @apply text-[0] hidden;
+    }
+    .button.small {
+      @apply w-12 h-12 items-center justify-center flex p-0 rounded-3xl;
+    }
+    .button.small .icon {
+      @apply m-0;
+    }
+  }
+  

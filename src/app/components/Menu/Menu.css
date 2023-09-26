@@ -1,0 +1,179 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+@media (max-width: 576px) {
+  .button {
+    @apply px-5 py-3;
+  }
+}
+
+/* Button.css */
+.button {
+  @apply inline-block cursor-pointer no-underline transition-[background-color] duration-[0.3s,color] delay-[0.3s] justify-center w-auto items-center px-10 py-3 rounded-[20px] border-[none];
+}
+.prime {
+  @apply bg-[#E00027] text-[white] shadow-[0px_9px_17px_0px_rgba(216,42,42,0.20)] hover:bg-[#800217] hover:shadow-[0px_3px_17px_0px_rgba(216,42,42,0.5)];
+}
+.secondary {
+  @apply bg-[#242627] text-[white] border border-solid border-[#707070] hover:bg-[#171819];
+}
+.small {
+  @apply text-sm;
+}
+.main {
+  @apply text-xl not-italic font-medium leading-[normal];
+}
+.with-icon {
+  @apply flex items-center;
+}
+.icon {
+  @apply mr-2;
+}
+@media (max-width: 992px) {
+  .small.with-icon .text {
+    @apply text-[0] hidden;
+  }
+  .button.small {
+    @apply w-12 h-12 items-center justify-center flex p-0 rounded-3xl;
+  }
+  .button.small .icon {
+    @apply m-0;
+  }
+}
+.menu {
+  @apply bg-[#242627] h-20 flex justify-between items-center text-[white] mt-6 px-9 rounded-3xl;
+}
+.logo-container {
+  @apply flex-1 flex justify-center items-center;
+}
+.logo-container a {
+  @apply no-underline;
+}
+.logo-container img {
+  @apply w-[47px] h-auto;
+}
+.menu-left {
+  @apply justify-start;
+}
+.menu-right {
+  @apply justify-end text-right;
+}
+.menu-title {
+  @apply text-[#666768] text-sm not-italic font-medium leading-[normal];
+}
+.menu-list {
+  @apply flex justify-end flex-col m-0 p-0;
+  list-style: none;
+}
+.menu-list a {
+  @apply text-2xl not-italic font-normal leading-[normal] no-underline items-center inline-flex;
+}
+.menu-list a img {
+  @apply ml-3;
+}
+a {
+  @apply text-[white] hover:text-[#E00027];
+}
+.menu-list li {
+  @apply mt-6;
+}
+.menu-items {
+  @apply opacity-0 z-[1000] max-h-0 overflow-hidden transition-opacity duration-[0.3s,max-height] delay-[0.3s];
+}
+.menu-items.open {
+  @apply opacity-100 max-h-[1000px] z-[1000];
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+  .popup-menu-wrapper {
+    @apply w-[calc(100%_-_48px)];
+  }
+}
+
+/* Small Devices */
+@media (min-width: 577px) and (max-width: 768px) {
+  .popup-menu-wrapper {
+    @apply w-[520px];
+  }
+}
+@media (max-width: 992px) {
+  .popup-menu-wrapper {
+    @apply shadow-[10px_12px_74px_0px_rgba(0,0,0,0.35)] flex flex-col absolute -translate-x-2/4 z-[1000] min-h-[80%] p-9 rounded-3xl left-2/4 top-0;
+    background: #242627;
+
+    /* justify-content: space-between; */
+
+    /* align-items: flex-start; */
+  }
+  .menu-left {
+    @apply mt-3;
+  }
+  .mobile-menu-item {
+    @apply inline-flex w-full justify-between;
+  }
+  .menu-left .menu-list li {
+    margin-block-start: 12px;
+  }
+  .menu-right {
+    @apply justify-self-end text-left flex flex-col justify-self-end mt-auto;
+  }
+  .menu-right .menu-list {
+    @apply hidden;
+  }
+  .menu-grid {
+    @apply grid grid-cols-[repeat(2,1fr)] gap-5 mt-3;
+  }
+  .grid-item {
+    @apply text-base not-italic font-normal leading-[normal] no-underline flex;
+
+    /* align-items: center; */
+  }
+  .grid-item a {
+    @apply flex no-underline items-center justify-center;
+  }
+  .grid-item img {
+    @apply mr-3;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .popup-menu-wrapper {
+    @apply w-[700px];
+  }
+}
+
+/* Large Devices */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .popup-menu-wrapper {
+    @apply shadow-[10px_12px_74px_0px_rgba(0,0,0,0.35)] flex min-w-[828px] max-w-[900px] justify-between items-center absolute -translate-x-2/4 z-[1000] p-9 rounded-3xl left-2/4;
+    background: #242627;
+
+    /* top: 50%; */
+  }
+  .mobile-menu-item {
+    @apply hidden;
+  }
+  .menu-grid {
+    @apply hidden;
+  }
+}
+
+/* Extra Large Devices */
+@media (min-width: 1201px) {
+  .popup-menu-wrapper {
+    @apply w-[1128px] shadow-[10px_12px_74px_0px_rgba(0,0,0,0.35)] flex justify-between items-center absolute -translate-x-2/4 z-[1000] p-9 rounded-3xl left-2/4;
+    background: #242627;
+
+    /* top: 0; */
+
+    /* top: 50%; */
+  }
+  .mobile-menu-item {
+    @apply hidden;
+  }
+  .menu-grid {
+    @apply hidden;
+  }
+}
