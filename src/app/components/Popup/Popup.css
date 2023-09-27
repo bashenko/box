@@ -1,0 +1,33 @@
+.popup-overlay {
+    @apply fixed w-full h-full bg-[rgba(0,0,0,0.5)] flex justify-center items-center text-[black] left-0 top-0;
+  }
+  .popup-content {
+    @apply bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] max-w-[80%] min-w-[60%] max-h-[80%] overflow-y-auto p-5 rounded-[10px];
+  }
+  .popup-close {
+    @apply absolute text-[42px] cursor-pointer text-[red] border-[none] right-2.5 top-2.5;
+    background: none;
+  }
+  .popup-text {
+    @apply p-2.5;
+  }
+  
+  .popup-text h1 {
+    @apply text-2xl mt-1 mb-5;
+  }
+  .popup-text h2 {
+    @apply text-xl mt-[15px]; 
+  }
+  .popup-text ul {
+    margin-left: 20px;
+    margin-block-start: 20px;
+    padding-inline-start: 0;
+  }
+  .popup-text li {
+    @apply ml-5;
+    list-style: disc;
+  }
+  .popup-text a {
+    @apply text-[red];
+  }
+  

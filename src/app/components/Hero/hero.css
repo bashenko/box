@@ -10,17 +10,20 @@
       @apply mt-5;
     }
     .boxhead {
-      @apply w-[310px] h-80 self-end bg-[bottom_right] ml-auto right-0;
-      background: url("/img/mobile-head.png"); /* Added this to ensure proper horizontal centering */ /* margin-right: auto;    */
+      @apply w-[310px] h-80 self-end bg-[bottom_right] ml-auto;
+      background: url("/img/mobile-head.png"); 
+      margin-right: 0px;
+      right: -20px;
     }
     .invitation-text-block {
-      @apply h-[260px] bg-[20px_40px] flex flex-col items-start p-[38px] rounded-[50px]; /* background-color: #151718; */
+      @apply h-[260px] flex flex-col items-start p-[38px] rounded-[50px]; /* background-color: #151718; */
       background: radial-gradient(
           circle,
           rgba(237, 237, 237, 0.2) 0%,
           rgba(0, 0, 0, 0) 100%
         ),
-        url("/img/line.png") center no-repeat, #151718; /* Adjust the horizontal (center) and vertical (100px from the top) positions */ /* justify-content: flex-start; */
+        url("/img/line.png") center no-repeat, #151718; 
+        background-position: 50px 40px;
     }
     .invitiation-text-left {
       @apply flex text-[white] text-sm font-medium flex-col mb-6; /* gap: 14px; */
@@ -46,227 +49,240 @@
     }
   }
   
-  /* Small Devices */
-  @media (min-width: 577px) and (max-width: 766px) {
-    .crown {
-      @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat -mr-3 -top-3;
-    }
-    .crown-wrapper {
-      @apply flex flex-row -ml-6 mt-2 -mb-1;
-    }
-    .hero {
-      @apply mt-10;
-    }
-    .boxhead {
-      @apply w-[560px] h-[500px] self-end bg-[bottom_right] ml-auto right-0;
-      background: url("/img/mobile-head.png"); /* Added this to ensure proper horizontal centering */ /* margin-right: auto;    */
-    }
-    .invitation-text-block {
-      @apply h-[400px] bg-[20px_70px] flex flex-col items-start p-[38px] rounded-[50px]; /* background-color: #151718; */
-      background: radial-gradient(
-          circle,
-          rgba(237, 237, 237, 0.2) 0%,
-          rgba(0, 0, 0, 0) 100%
-        ),
-        url("/img/line.png") center no-repeat, #151718; /* Adjust the horizontal (center) and vertical (100px from the top) positions */ /* justify-content: flex-start; */
-    }
-    .invitiation-text-left {
-      @apply flex text-[white] text-xl font-medium flex-col mb-6; /* gap: 14px; */
-    }
-    .invitiation-text-right {
-      @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-start text-left;
-    }
-    .image-red-container {
-      @apply rounded-[50px_0_167px_50px];
-    }
-    .stats {
-      @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
-    }
-    .data-wrapper {
-      @apply flex flex-col items-center;
-    }
-    .hero-wrapper {
-      @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
-    }
-    .accented {
-      @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
-      text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
-    }
+/* Small Devices */
+@media (min-width: 577px) and (max-width: 766px) {
+  .crown {
+    @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat -mr-3 -top-3;
   }
-  
-  /* Medium Devices */
-  @media (min-width: 767px) and (max-width: 992px) {
-    .crown {
-      @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat -mr-3 -top-3;
-    }
-    .crown-wrapper {
-      @apply flex flex-row -ml-6 mt-2 -mb-1;
-    }
-    .hero {
-      @apply mt-10;
-    }
-    .boxhead {
-      @apply w-[760px] h-[602px] self-end bg-[bottom_right] ml-auto right-0;
-      background: url("/img/mobile-head.png"); /* Added this to ensure proper horizontal centering */ /* margin-right: auto;    */
-    }
-    .invitation-text-block {
-      @apply h-[400px] bg-[20px_100px] flex flex-col items-start p-[38px] rounded-[50px]; /* background-color: #151718; */
-      background: radial-gradient(
-          circle,
-          rgba(237, 237, 237, 0.2) 0%,
-          rgba(0, 0, 0, 0) 100%
-        ),
-        url("/img/line.png") center/contain no-repeat, #151718; /* Adjust the horizontal (center) and vertical (100px from the top) positions */ /* justify-content: flex-start; */
-    }
-    .invitiation-text-left {
-      @apply flex text-[white] text-xl font-medium flex-col mb-6; /* gap: 14px; */
-    }
-    .invitiation-text-right {
-      @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-start text-left;
-    }
-    .image-red-container {
-      @apply rounded-[50px_0_167px_50px];
-    }
-    .stats {
-      @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[42px] py-5 rounded-[50px_50px_00px_0px];
-    }
-    .data-wrapper {
-      @apply flex flex-row items-center;
-    }
-    .hero-wrapper {
-      @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
-    }
-    .accented {
-      @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase -mb-3;
-      text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
-    }
+  .crown-wrapper {
+    @apply flex flex-row -ml-6 mt-2 -mb-1;
   }
-  
-  /* Large Devices */
-  @media (min-width: 993px) and (max-width: 1200px) {
-    .boxhead {
-      @apply w-[900px] h-[602px] bg-[bottom_center] mx-auto inset-x-0;
-      background: url("/img/head.png"); /* Added this to ensure proper horizontal centering */ /* Added this to ensure proper horizontal centering */
-    }
-    .invitiation-text-left {
-      @apply w-[280px] flex text-[white] text-xl font-medium flex-col gap-3.5;
-    }
-    .invitiation-text-right {
-      @apply w-[260px] flex text-[#B9B9BA] text-xl font-semibold flex-col justify-end text-right;
-    }
-    .hero {
-      @apply mt-20;
-    }
-    .crown {
-      @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat left-3 -top-3;
-    }
-    .crown-wrapper {
-      @apply flex flex-row ml-[-30px];
-    }
-    .invitation-text-block {
-      @apply h-[260px] bg-[center_110px] justify-between flex items-center px-[38px] py-0 rounded-[50px]; /* background-color: #151718; */
-      background: radial-gradient(
-          circle,
-          rgba(237, 237, 237, 0.2) 0%,
-          rgba(0, 0, 0, 0) 100%
-        ),
-        url("/img/line.png") center/contain no-repeat, #151718; /* Adjust the vertical position (20px) */
-    }
-    .image-red-container {
-      @apply rounded-[50px];
-    }
-    .stats {
-      @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
-    }
-    .data-wrapper {
-      @apply flex flex-row items-center;
-    }
-    .hero-wrapper {
-      @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
-    }
-    .accented {
-      @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
-      text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
-    }
-  }
-  
-  /* Extra Large Devices */
-  @media (min-width: 1201px) {
-    .crown {
-      @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat left-3 -top-3; /* margin-right: -12px; */
-    }
-    .crown-wrapper {
-      @apply flex flex-row -ml-9;
-    }
-    .boxhead {
-      @apply w-[1148px] h-[692px] bg-[bottom_center] mx-auto inset-x-0;
-      background: url("/img/head.png"); /* Added this to ensure proper horizontal centering */ /* Added this to ensure proper horizontal centering */
-    }
-    .hero {
-      @apply mt-[120px];
-    }
-    .invitation-text-block {
-      @apply h-[260px] bg-[center_70px] justify-between flex items-center px-[38px] py-0 rounded-[50px]; /* background-color: #151718; */
-      background: radial-gradient(
-          circle,
-          rgba(237, 237, 237, 0.2) 0%,
-          rgba(0, 0, 0, 0) 100%
-        ),
-        url("/img/line.png") center/contain no-repeat, #151718; /* Adjust the vertical position (20px) */
-    }
-    .invitiation-text-left {
-      @apply flex text-[white] text-xl font-medium flex-col gap-3.5;
-    }
-    .invitiation-text-right {
-      @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-end text-right;
-    }
-    .image-red-container {
-      @apply rounded-[50px];
-    }
-    .stats {
-      @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
-    }
-    .data-wrapper {
-      @apply flex flex-row items-center;
-    }
-    .hero-wrapper {
-      @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
-    }
-    .accented {
-      @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
-      text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
-    }
+  .hero {
+    @apply mt-10;
   }
   .boxhead {
-    @apply absolute bg-contain bg-no-repeat pointer-events-none bottom-0;
+    @apply w-[560px] h-[500px] self-end bg-[bottom_right] ml-auto right-0;
+    background: url("/img/mobile-head.png"); 
+    margin-right: 0px;
+    right: -70px;
   }
-  .stats-wrapper {
-    @apply inline-flex w-full justify-between;
+  .invitation-text-block {
+    @apply h-[440px] flex flex-col items-start p-[38px] rounded-[50px];
+    background: radial-gradient(
+        circle,
+        rgba(237, 237, 237, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("/img/line.png") center no-repeat, #151718; 
+      background-position: 20px 70px;
   }
-  .shadow-after {
-    @apply content-[""] before:content-[""] before:absolute before:bg-[none] before:right-[-50px] before:h-[25px] before:w-[50px] before:shadow-[-25px_0_0_0_#242627] before:rounded-bl-[25px] before:bottom-0;
+  .invitiation-text-left {
+    @apply flex text-[white] text-xl font-medium flex-col mb-6; /* gap: 14px; */
   }
-  .shadow-after::before {
-    @apply content-[""] absolute bg-[none] right-[-50px] h-[25px] w-[50px] shadow-[-25px_0_0_0_#242627] rounded-bl-[25px] bottom-0;
-    /* This is where the magic happens! */
-  }
-  .shadow-before {
-    @apply content-[""] before:content-[""] before:absolute before:bg-[none] before:left-[-50px] before:h-[25px] before:w-[50px] before:shadow-[25px_0_0_0_#242627] before:rounded-br-[25px] before:bottom-0;
-  }
-  .shadow-before::before {
-    @apply content-[""] absolute bg-[none] left-[-50px] h-[25px] w-[50px] shadow-[25px_0_0_0_#242627] rounded-br-[25px] bottom-0;
-    /* This is where the magic happens! */
-  }
-  .strong {
-    @apply text-[white];
+  .invitiation-text-right {
+    @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-start text-left w-[160px];
   }
   .image-red-container {
-    @apply h-[93px] w-full bg-[#E00027] relative mt-5;
+    @apply rounded-[50px_0_167px_50px];
   }
-  .data {
-    @apply flex flex-row border items-center ml-3 pr-3.5 p-1 rounded-[80px] border-solid border-[rgba(255,255,255,0.30)];
+  .stats {
+    @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
   }
-  .data-current {
-    @apply bg-[#3A3C3D] mr-[5px] px-4 py-1 rounded-[38px];
+  .data-wrapper {
+    @apply flex flex-col items-center;
   }
+  .hero-wrapper {
+    @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
+  }
+  .accented {
+    @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
+    text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
+  }
+}
+  
+/* Medium Devices */
+@media (min-width: 767px) and (max-width: 992px) {
+  .crown {
+    @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat -mr-3 -top-3;
+  }
+  .crown-wrapper {
+    @apply flex flex-row -ml-6 mt-2 -mb-1;
+  }
+  .hero {
+    @apply mt-10;
+  }
+  .boxhead {
+    @apply w-[760px] h-[602px] self-end bg-[bottom_right] ml-auto;
+    background: url("/img/mobile-head.png"); /* Added this to ensure proper horizontal centering */ /* margin-right: auto;    */
+    margin-right: 0px;
+    right: -125px;
+  }
+  .invitation-text-block {
+    @apply h-[500px] flex flex-col items-start p-[38px] rounded-[50px]; /* background-color: #151718; */
+    background: radial-gradient(
+        circle,
+        rgba(237, 237, 237, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("/img/line.png") center/contain no-repeat, #151718; 
+      background-position: 20px 110px;
+  }
+  .invitiation-text-left {
+    @apply flex text-[white] text-xl font-medium flex-col mb-6; /* gap: 14px; */
+  }
+  .invitiation-text-right {
+    @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-start text-left w-[240px];
+  }
+  .image-red-container {
+    @apply rounded-[50px_0_167px_50px];
+  }
+  .stats {
+    @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[42px] py-5 rounded-[50px_50px_00px_0px];
+  }
+  .data-wrapper {
+    @apply flex flex-row items-center;
+  }
+  .hero-wrapper {
+    @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
+  }
+  .accented {
+    @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase -mb-3;
+    text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
+  }
+}
+  
+/* Large Devices */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .boxhead {
+    @apply w-[900px] h-[602px] bg-[bottom_center] mx-auto inset-x-0;
+    background: url("/img/head.png"); /* Added this to ensure proper horizontal centering */ /* Added this to ensure proper horizontal centering */
+  }
+  .invitiation-text-left {
+    @apply w-[280px] flex text-[white] text-xl font-medium flex-col gap-3.5;
+  }
+  .invitiation-text-right {
+    @apply w-[260px] flex text-[#B9B9BA] text-xl font-semibold flex-col justify-end text-right;
+  }
+  .hero {
+    @apply mt-20;
+  }
+  .crown {
+    @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat left-3 -top-3;
+  }
+  .crown-wrapper {
+    @apply flex flex-row ml-[-30px];
+  }
+  .invitation-text-block {
+    @apply h-[260px]  justify-between flex items-center px-[38px] py-0 rounded-[50px]; /* background-color: #151718; */
+    background: radial-gradient(
+        circle,
+        rgba(237, 237, 237, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("/img/line.png") center/contain no-repeat, #151718; 
+      background-position: center 110px;
+  }
+  .image-red-container {
+    @apply rounded-[50px];
+  }
+  .stats {
+    @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
+  }
+  .data-wrapper {
+    @apply flex flex-row items-center;
+  }
+  .hero-wrapper {
+    @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
+  }
+  .accented {
+    @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
+    text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
+  }
+}
+  
+/* Extra Large Devices */
+@media (min-width: 1201px) {
+  .crown {
+    @apply relative w-9 h-9 bg-[url('/img/crown.png')] bg-no-repeat left-3 -top-3; /* margin-right: -12px; */
+  }
+  .crown-wrapper {
+    @apply flex flex-row -ml-9;
+  }
+  .boxhead {
+    @apply w-[1148px] h-[692px] mx-auto inset-x-0 bottom-0;
+    background: url("/img/head.png");
+  }
+  .hero {
+    @apply mt-[120px];
+  }
+  .invitation-text-block {
+    @apply h-[260px] justify-between flex items-center px-[38px] py-0 rounded-[50px]; /* background-color: #151718; */
+    background: radial-gradient(
+        circle,
+        rgba(237, 237, 237, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("/img/line.png") center/contain no-repeat, #151718; 
+      background-position: center 80px;
+  }
+  .invitiation-text-left {
+    @apply flex text-[white] text-xl font-medium flex-col gap-3.5;
+  }
+  .invitiation-text-right {
+    @apply flex text-[#B9B9BA] text-xl font-semibold flex-col justify-end text-right;
+  }
+  .image-red-container {
+    @apply rounded-[50px];
+  }
+  .stats {
+    @apply relative bg-[#242627] text-white text-xl not-italic font-medium leading-[normal] px-[62px] py-5 rounded-[50px_50px_00px_0px];
+  }
+  .data-wrapper {
+    @apply flex flex-row items-center;
+  }
+  .hero-wrapper {
+    @apply bg-[#242627] px-[26px] py-4 rounded-[0px_0px_50px_50px];
+  }
+  .accented {
+    @apply text-white text-3xl not-italic font-semibold leading-[26px] uppercase;
+    text-shadow: 0px 4px 10px rgba(255, 203, 203, 0.3);
+  }
+}
+
+.hero {
+  @apply font-jost font-medium
+}
+.boxhead {
+  @apply absolute bg-contain bg-no-repeat pointer-events-none bottom-0;
+  background-position: bottom center;
+}
+.stats-wrapper {
+  @apply inline-flex w-full justify-between;
+}
+.shadow-after {
+  @apply content-[""] before:content-[""] before:absolute before:bg-[none] before:right-[-50px] before:h-[25px] before:w-[50px] before:shadow-[-25px_0_0_0_#242627] before:rounded-bl-[25px] before:bottom-0;
+}
+.shadow-after::before {
+  @apply content-[""] absolute bg-[none] right-[-50px] h-[25px] w-[50px] shadow-[-25px_0_0_0_#242627] rounded-bl-[25px] bottom-0;
+  /* This is where the magic happens! */
+}
+.shadow-before {
+  @apply content-[""] before:content-[""] before:absolute before:bg-[none] before:left-[-50px] before:h-[25px] before:w-[50px] before:shadow-[25px_0_0_0_#242627] before:rounded-br-[25px] before:bottom-0;
+}
+.shadow-before::before {
+  @apply content-[""] absolute bg-[none] left-[-50px] h-[25px] w-[50px] shadow-[25px_0_0_0_#242627] rounded-br-[25px] bottom-0;
+  /* This is where the magic happens! */
+}
+.strong {
+  @apply text-[white];
+}
+.image-red-container {
+  @apply h-[93px] w-full bg-[#E00027] relative mt-5;
+}
+.data {
+  @apply flex flex-row border items-center ml-3 pr-3.5 p-1 rounded-[80px] border-solid border-[rgba(255,255,255,0.30)];
+}
+.data-current {
+  @apply bg-[#3A3C3D] mr-[5px] px-4 py-1 rounded-[38px];
+}
   

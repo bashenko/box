@@ -1,0 +1,135 @@
+@media (max-width: 576px) {
+    .footer {
+      @apply bg-[#242627] relative text-[white] mt-[60px] p-5 bottom-0 font-jost;
+  
+      /* width: 100%; */
+    }
+    .footer-nav {
+      @apply flex items-center flex-col py-10;
+    }
+    .footer-copyright {
+      @apply text-[#D3D4D4] text-sm not-italic font-light leading-[normal] flex items-center flex-col text-center py-6;
+    }
+    .footer-copyright a {
+      @apply no-underline text-[#D3D4D4] hover:text-accent;
+    }
+  
+    /* Styles for social icons */
+    .icons-list {
+      @apply flex justify-end mt-5 m-0 p-0;
+      list-style: none;
+    }
+    .icons-list li {
+      @apply ml-3.5;
+    }
+  
+    /* Styles for the navigation */
+    .navigation {
+      @apply w-full;
+    }
+    .nav-list {
+      @apply flex flex-col items-center justify-end mt-5 m-0 p-0;
+      list-style: none;
+    }
+    .nav-list a {
+      @apply no-underline text-[#D3D4D4] text-base not-italic font-light leading-[normal] hover:text-[#f39c12];
+    }
+    .separator {
+      @apply w-full h-px bg-[white] opacity-[0.14];
+    }
+    .logo {
+      @apply bg-[url("/img/logo.png")] w-14 h-[73px];
+    }
+  }
+  
+@media (min-width: 577px) and (max-width: 992px) {
+.footer {
+    @apply bg-[#242627] relative text-[white] mt-[60px] p-5 bottom-0 font-jost;
+
+    /* width: 100%; */
+}
+.footer-nav {
+    @apply flex items-center py-10;
+}
+.footer-copyright {
+    @apply text-[#D3D4D4] text-sm not-italic font-light leading-[normal] flex justify-between py-6;
+}
+.footer-copyright a {
+    @apply no-underline text-[#D3D4D4] hover:text-accent;
+}
+
+/* Styles for social icons */
+.icons-list {
+    @apply flex justify-end m-0 p-0;
+    list-style: none;
+}
+.icons-list li {
+    @apply ml-3.5;
+}
+
+/* Styles for the navigation */
+.navigation {
+    @apply w-full;
+}
+.nav-list {
+    @apply flex justify-end m-0 p-0;
+    list-style: none;
+}
+.nav-list li {
+    @apply ml-10;
+}
+.nav-list a {
+    @apply no-underline text-[#D3D4D4] text-base not-italic font-light leading-[normal] hover:text-[#f39c12];
+}
+.separator {
+    @apply w-full h-px bg-[white] opacity-[0.14];
+}
+.logo {
+    @apply bg-[url("/img/logo.png")] w-14 h-[73px];
+}
+}
+  
+@media (min-width: 993px) {
+.footer {
+    @apply w-full bg-[#242627] relative text-[white] mt-[60px] bottom-0 font-jost;
+}
+.footer-nav {
+    @apply flex items-center py-10;
+}
+.footer-copyright {
+    @apply text-[#D3D4D4] text-sm not-italic font-light leading-[normal] flex justify-between py-6;
+}
+.footer-copyright a {
+    @apply no-underline text-[#D3D4D4] hover:text-accent;
+}
+
+/* Styles for social icons */
+.icons-list {
+    @apply flex justify-end m-0 p-0;
+    list-style: none;
+}
+.icons-list li {
+    @apply ml-3.5;
+}
+
+/* Styles for the navigation */
+.navigation {
+    @apply w-full;
+}
+.nav-list {
+    @apply flex justify-end m-0 p-0;
+    list-style: none;
+}
+.nav-list li {
+    @apply ml-20;
+}
+.nav-list a {
+    @apply no-underline text-[#D3D4D4] text-base not-italic font-light leading-[normal] hover:text-accent;
+}
+.separator {
+    @apply w-full h-px bg-[white] opacity-[0.14];
+}
+.logo {
+    @apply bg-[url("/img/logo.png")] w-14 h-[73px];
+}
+}

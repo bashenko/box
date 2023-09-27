@@ -6,7 +6,7 @@ import { Button } from "../Button/Button";
 
 export default function CTABlock() {
     return (
-      <div className='cta'>
+      <div className='cta font-jost'>
         <div className='title-button-wrapper'>
           <span className="title">The Future of Boxing Is Fan Owned</span>
           <div className="button-wrapper">

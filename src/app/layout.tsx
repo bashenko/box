@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-
+import Footer from './components/Footer/Footer'
 import { Jost, Michroma } from 'next/font/google'
+import Head from 'next/head';
 
 const jost = Jost({
   subsets: ['latin'],
@@ -28,10 +29,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="./img/favicon.ico" />
+      </Head>
       <body className={`${jost.variable} ${michroma.variable}`}>
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )

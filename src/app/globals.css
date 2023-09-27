@@ -27,7 +27,6 @@ body {
 /* Extra Small Devices */
 @media (max-width: 576px) {
   .container {
-    /* Your CSS rules for extra small devices */
     @apply w-full;
   }
 
@@ -39,8 +38,7 @@ body {
 /* Small Devices */
 @media (min-width: 577px) and (max-width: 768px) {
   .container {
-    /* Your CSS rules for small devices */
-    @apply w-[700px] mx-auto;
+    @apply mx-auto;
   }
 
   h1 {
@@ -51,8 +49,7 @@ body {
 /* Medium Devices */
 @media (min-width: 767px) and (max-width: 992px) {
   .container {
-    /* Your CSS rules for medium devices */
-    @apply w-[900px] mx-auto;
+    @apply w-[700px] mx-auto;
   }
 
   h1 {
@@ -63,8 +60,7 @@ body {
 /* Large Devices */
 @media (min-width: 993px) and (max-width: 1200px) {
   .container {
-    /* Your CSS rules for large devices */
-    @apply w-[1200px] mx-auto;
+    @apply w-[900px] mx-auto;
   }
 
   h1 {
@@ -75,8 +71,7 @@ body {
 /* Extra Large Devices */
 @media (min-width: 1201px) {
   .container {
-    /* Your CSS rules for extra large devices */
-    @apply w-[1440px] mx-auto;
+    @apply w-[1200px] mx-auto;
   }
 
   h1 {

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -15,8 +16,8 @@ const Menu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
   
-    const handleOutsideClick = (event:MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (menuRef.current && !(menuRef.current as Node).contains(event.target as Node)) {
         setIsMenuOpen(false);
       }
     };
