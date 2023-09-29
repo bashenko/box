@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import './CTABlock.css';
 import { Button } from "../Button/Button";
 
@@ -10,7 +11,9 @@ export default function CTABlock() {
         <div className='title-button-wrapper'>
           <span className="title">The Future of Boxing Is Fan Owned</span>
           <div className="button-wrapper">
-            <Button to="/" size="main" type="prime" leadingIcon={<Image src="/img/Ic_wallet.svg" alt="wallet" width={20} height={20} />}>CONNECT</Button>
+            <Link href="https://matchup-eny3gcscqa-uc.a.run.app">
+              <Button to="/" size="main" type="prime" leadingIcon={<Image src="/img/Ic_wallet.svg" alt="wallet" width={20} height={20} />}>CONNECT</Button>
+            </Link>
           </div>
         </div>
   
