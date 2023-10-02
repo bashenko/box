@@ -11,9 +11,7 @@ export default function CTABlock() {
         <div className='title-button-wrapper'>
           <span className="title">The Future of Boxing Is Fan Owned</span>
           <div className="button-wrapper">
-            <Link href="https://matchup-eny3gcscqa-uc.a.run.app">
-              <Button to="/" size="main" type="prime" leadingIcon={<Image src="/img/Ic_wallet.svg" alt="wallet" width={20} height={20} />}>CONNECT</Button>
-            </Link>
+              <Button to="https://matchup-eny3gcscqa-uc.a.run.app" size="main" type="prime" leadingIcon={<Image src="/img/Ic_wallet.svg" alt="wallet" width={20} height={20} />}>CONNECT</Button>
           </div>
         </div>
   
