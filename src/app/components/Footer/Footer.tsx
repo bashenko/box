@@ -12,7 +12,7 @@ const Footer = () => {
 
     const termsContent = (
         <>
-        <h1>Terms of Service</h1>
+        <h1>Terms of Service.</h1>
         <b>
             Terms of Service for boxingheads.app (Matchup Labs LLC)
         </b>
