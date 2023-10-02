@@ -62,9 +62,9 @@ const Menu = () => {
             <nav>
               <ul className="menu-list">
                 <li><Link href="/">Home</Link></li>
-                <li><Link href="/about">About us</Link></li>
-                <li><Link href="/contact">The 34 Founders</Link></li>
-                <li><Link href="/contact">Roadmap</Link></li>
+                <li><Link href="/">About us</Link></li>
+                <li><Link href="/">The 34 Founders</Link></li>
+                <li><Link href="/">Roadmap</Link></li>
               </ul>
             </nav>
           </div>
